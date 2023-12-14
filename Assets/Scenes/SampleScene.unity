@@ -190,7 +190,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b17c9cb39de39e744a7c58e54b01256c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -362,7 +362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905966287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17926659, y: 3.3425407, z: -1.9389896}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0ea11ec2a01144d8de2cc3ff60eb46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intialPlayerSpeed: 4
+  initialPlayerSpeed: 4
   maximumPlayerSpeed: 30
   PlayerSpeedIncreaseRate: 0.1
   JumpHeight: 1
@@ -492,6 +492,24 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  turnLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  turnEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 905966288}
+        m_TargetAssemblyTypeName: TileSpawner, Assembly-CSharp
+        m_MethodName: AddNewDirection
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!143 &1840480994
 CharacterController:
   m_ObjectHideFlags: 0
@@ -548,7 +566,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840480992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.093327, y: 3.0066624, z: 88.59625}
+  m_LocalPosition: {x: 0, y: 1.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

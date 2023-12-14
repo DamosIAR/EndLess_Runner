@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-namespace TempleRun {
+namespace EndlessRun {
 
 public enum TileType {
     STRAIGHT,

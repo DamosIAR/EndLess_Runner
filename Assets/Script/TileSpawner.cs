@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using TempleRun;
+using EndlessRun;
 using Unity.VisualScripting;
 using UnityEngine;
 
